@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Olw Carousel 2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Font-Awesome Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- <video autoplay muted loop id="bgVideo">
+        <source src="./assets/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video> -->
+
+    <!-- Header Start -->
+    <header id="header" class="pb-5">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg navbar-dark color-second-bg justify-content-between fixed-top">
+            <a class="navbar-brand font-rubik" href="#"><img class="navbar-logo img-fluid" src="assets/logo.png" alt="logo" width="30px;">
+               
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto font-rubik">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link personal-info-nav" href="#personal-information">Personal Info.</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link programming-languages-nav" href="#programming-languages">Progamming Languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link databases-nav" href="#databases">Databases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link servers-nav" href="#servers">Servers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tools-nav" href="#tools">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link others-nav" href="#others">Others</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link message-nav" href="#message"><i class="fas fa-envelope"></i> Send Message</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header End -->
+
+    <script> 
+        $(document).ready(function(){
+            // Add smooth scrolling to all links
+            $(".personal-info-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+            // Add smooth scrolling to all links
+            $(".programming-languages-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+            // Add smooth scrolling to all links
+            $(".databases-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+            // Add smooth scrolling to all links
+            $(".servers-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+             // Add smooth scrolling to all links
+             $(".tools-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+            // Add smooth scrolling to all links
+            $(".others-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+            // Add smooth scrolling to all links
+            $(".message-nav").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+                } // End if
+            });
+
+        });
+        
+    </script>
+
+    <video autoplay muted loop id="bgVideo">
+        <source src="./assets/bg.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Main Content Start-->
+    <main id="main-content" class="pb-5">
+        <!-- Baner Section Start -->
+        <section id="banner-area">
+            <div class="item pb-5">
+                <img src="./assets/portfolio-banner.png" alt="Banner1" class="img-fluid">
+            </div>
+        </section>
+        <!-- Banner Section End -->
+        
+        <!-- Personal Information Start -->
+        <section id="personal-information">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 py-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">PERSONAL INFORMATION</legend>
+                        <!--Grid column-->
+                        <div class="row align-items-center">  
+                            <div class="col-lg-6 col-md-6 text-center py-4">
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text color-second-bg text-white">NAME</div>
+                                    </div>
+                                    <input type="text" class="form-control py-0 text-center bg-white font-weight-bold font-rale" id="inlineFormInputGroup" value="ORLAN G. CASTELO" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text color-second-bg text-white">AGE</div>
+                                    </div>
+                                    <input type="text" class="form-control py-0 text-center bg-white font-rale" id="inlineFormInputGroup" value="30" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text color-second-bg text-white">ADDRESS</div>
+                                    </div>
+                                    <input type="text" class="form-control py-0 text-center bg-white font-rale" id="inlineFormInputGroup" value="MANILA, METRO MANILA" disabled>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <label class="sr-only" for="inlineFormInputGroup"></label>
+                                    <div class="input-group mb-2">
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text color-second-bg text-white">EMAIL</div>
+                                    </div>
+                                    <input type="text" class="form-control py-0 text-center bg-white font-rale" id="inlineFormInputGroup" value="casteloorlan@gmail.com" disabled>
+                                    </div>
+                                </div>        
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-center py-4">
+                                <h6 class="font-rale font-size-18">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h6>
+                                <img src="./assets/au-logo.png" alt="au-logo" class="img-fluid"><br>
+                                <div class="d-flex justify-content-center">
+                                    <div class="">
+                                        <img src="./assets/phinma-logo.png" alt="phinma-logo" class="img-fluid" width="50px;">
+                                    </div>
+                                    <div class="py-1 px-1">
+                                        <h6 class="font-rale font-size-16">PHINMA EDUCATION NETWORK</h6>
+                                        <h6 class="font-baloo font-size-10">MAKING LIVES BETTER THROUGH EDUCATION</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+                </fieldset>
+            </div>
+        </section>
+        <!-- Personal Information End -->
+                        
+        <!-- Programming Languages Start -->
+        <section id="programming-languages">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">PROGRAMMING LANGUAGES</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/php.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">PHP</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/javascript.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">JAVASCRIPT</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/vb.net.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">VISUAL BASIC</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Programing Langauges End -->
+
+        <!-- Databases Start -->
+        <section id="databases">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">DATABASES</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/mysql.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">MYSQL</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/mariadb.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">MARIA DB</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/sql-lite.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">SQL LITE</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Databases End -->
+
+        <!-- Servers Start -->
+        <section id="servers">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">SERVERS</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/wamp.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">WAMP</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/xampp.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">XAMPP</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/ngix.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">NGINX</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Servers End -->
+
+        <!-- Tools Start -->
+        <section id="tools">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">TOOLS</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/git.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">GIT</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/nodejs.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">NODE JS</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/postman.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">POSTMAN</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/vscode.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">VS CODE</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/sublime-text.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">SUBLIME TEXT</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/sap-crystal-reports.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">SAP CRYSTAL REPORT</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Tools End -->
+
+        <!-- Others Start -->
+        <section id="others">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">OTHERS</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/html5.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">HTML</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/css.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">CSS</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/bootstrap.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">BOOTSTRAP</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/sass.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">SASS</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/jquery.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">JQUERY</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/ajax.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">AJAX</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/axios.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">AXIOS</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/my-workbench.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">MYSQL WORKBENCH</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/icons/centos.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">CENTOS</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Others End -->
+
+        <!-- Projects Start -->
+        <section id="others">
+            <div class="container py-4 bg-white">
+                <fieldset class="px-4 border shadow">
+                    <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">PROJECTS</legend>
+                    <div class="row py-4">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <a href="https://orlancastelo.github.io/laptopcity/" target="_blank" class="text-title">
+                                <img src="assets/home-template2.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18">E-COMMERCE WEBSITE</h6>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/default-photo.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18 title-text">HRIS</h6>
+                                <h6 class="font-baloo font-size-16 status">(Will upload soon)</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 mb-4 border">
+                            <img src="assets/default-photo.png" class="img-fluid mx-auto d-block" alt="" width="100px;">
+                            <div class="text-center mb-3">
+                                <h6 class="font-rale font-size-18 title-text">RMS WITH INVENTORY</h6>
+                                <h6 class="font-baloo font-size-16 status">(Will upload soon)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+        <!-- Projects End -->
+
+        <!-- Message Start -->
+        <section id="message">
+                <div class="container py-4 bg-white">
+                    <fieldset class="px-4 border shadow py-4">
+                        <legend class="color-second-bg text-white py-2 px-3 font-size-16" style="width: auto;">MESSAGE</legend>
+                            <div class="row border">
+                                <form class="col-12 py-4">
+                                    <div class="form-group">
+                                        <label for="for-label">Name:</label>
+                                        <input class="form-control" type="text" name="" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="for-label">Email:</label>
+                                        <input class="form-control" type="email" name="" id="email" placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="for-label">Message:</label>
+                                        <textarea class="form-control" name="" id="message" rows="5" placeholder="Type your message here...."></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn color-second-bg text-white btn-block">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                    </fieldset>
+                </div>   
+        </section>
+        <!-- Message End -->
+
+    </main>
+    <!-- Main Content End-->
+
+    <!-- Footer Start -->
+    <footer id="footer" class="bg-dark text-white pt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="text-center">
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg text-white mx-2"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-lg text-white mx-2"></i></a>
+                  <a href="https://github.com/" target="_blank"><i class="fab fa-github fa-lg text-white mx-2"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-lg text-white mx-2"></i></a>
+                </div>
+            </div>
+            <div class="copyright text-center bg-dark text-white py-4">
+                <p class="font-rale font-size-14">&copy; Copyright 2020, Designed and Created By: <a href="#" class="color-second my-name">Orlan Castelo</a></p>
+            </div>
+        </div> 
+    </footer>
+    <!-- Footer End -->
+    
+    <!-- Bootstrap CDN JS-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+ 
+    <!-- Owl Carousel 2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Isotope CDN Plugin JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="./index.js"></script>
+
+     <!-- JQUERY FOR LOADING CONTENT USING SCRIPT -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
