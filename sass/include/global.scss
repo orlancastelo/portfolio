@@ -30,3 +30,8 @@
     height: auto;
     z-index: -1;
   }
+  .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
