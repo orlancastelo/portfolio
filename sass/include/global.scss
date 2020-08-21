@@ -1,6 +1,42 @@
-/* Global Style */
+/* BG VIDEO */
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+  }
+
+  /* FORM */
+  .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .row .message-button:hover {
+    background-color: #e43e01;
+  }
+
+/* FOOTER */
 .copyright .my-name{
     text-decoration: none;
+}
+
+@media (min-width: 576px) {
+    .copyright p { font-size: 0.6875rem; }
+}
+@media (min-width: 768px) {
+    .copyright p { font-size: 0.75rem; }
+}
+@media (min-width: 992px) {
+    .copyright p { font-size: 0.8125rem; }
+}
+@media (min-width: 1200px) {
+    .copyright p { font-size: 0.875rem; }
 }
 
 .copyright .my-name:hover{
@@ -16,22 +52,10 @@
     color: #FF4500;
 }
 
-.row .fab:hover{
-    opacity: .5;
+.row .fab{
+    transition: transform .5s ease;
 }
 
-#bgVideo {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-  }
-  .form-control:focus {
-    border-color: inherit;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
+.row .fab:hover{
+    transform: scale(1.3);
+}
